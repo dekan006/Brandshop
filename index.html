@@ -4,49 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/all.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link href="css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
     
     <title>Document</title>
-    <style>
-       
-    </style>
     
     <script src="script/jquery-3.6.0.js"></script>
-    <script type="text/javascript" src="script/slick.js"></script>
-    <script src="script/all.js"></script>
+    <script type="text/javascript" src="script/slick.js"></script>  
 </head>
 <body> 
 <div class="main_container">
-                                                <!--Header -->
+    <!--Header -->
     <header class="header">
+        <h1 class="sr-only">Магазин BrandShop</h1>
         <div class="top-bar">
-            <div class="top_bar__phone_item top-bar__box"> <a href="tel:+375293353328"><i class="fas fa-mobile-alt"></i> +375 29 335 33 28</a></div>
-            <div class="top_bar__email_item top-bar__box"><a href="mailto:dekan06@gmail.com"><i class="far fa-envelope"></i> dekan06@gmail.com</a></div>
-             <div class="top_bar__login_item top-bar__box">
-                 <a href="#"><i class="far fa-user"></i> Войти</a>
-                </div>
-  
+            <div class="top_bar__phone_item top-bar__box">
+                <a href="tel:+375293353328"><i class="fas fa-mobile-alt"></i> +375 29 335 33 28</a>
+            </div>
+            <div class="top_bar__email_item top-bar__box">
+                <a href="mailto:dekan06@gmail.com"><i class="far fa-envelope"></i> dekan06@gmail.com</a>
+            </div>
+            <div class="top_bar__login_item top-bar__box">
+                <a href="#"><i class="far fa-user"></i> Войти</a>
+            </div>
         </div>
 
         <div class="main-header">
             <div class="main-header__logo"><a href="index">BrandShop</a></div>
             <div class="search_form">
                 <form>
-                <input type="text" placeholder="Искать здесь...">
-                <button type="submit"><i class="fas fa-search"></i></button>
+                    <input type="text" placeholder="Искать здесь...">
+                    <button type="submit" aria-label="Искать">
+                        <span class="sr-only">Search</span>
+                        <i class="fas fa-search"></i>
+                    </button>
                 </form>
-              </div>
+            </div>
             <div class="main-header__cart">
-                <button type="submit" class="header_basket_button" value="Submit"><a href="#"><i class="fas fa-shopping-cart"></i>Корзина</a></button>
+                <a href="#" class="header_basket_button"><i class="fas fa-shopping-cart"></i>Корзина</a>
             </div>
         </div>
-        <div class="menu">
+        <!-- please use semantic tag <menu> -->
+        <div class="menu"> 
             <ul>
                 <li class="menu__first_item"><a href="#"> <i class="fas fa-bars"></i> Категории</a>
                     <ul>
@@ -65,7 +69,7 @@
             </ul>
         </div>
     </header>
-                                        <!--Banner -->
+    <!--Banner -->
     <div class="banner">
         <div class="banner_background"></div>
         <div class="banner_product"></div>
@@ -243,8 +247,38 @@
                         <img src="img/banner_2_product.png" alt="">
                     </div>
                 </div> 
-                
-            
+
+                <div class="banner_2_container">
+                    <div class="banner_2_text">
+                        <div class="banner_2_categories">Laptops 2</div>
+                        <div class="banner_2_name"> MacBook Air 13</div>
+                        <div class="banner_2_dscr"> Самый тонкий и лёгкий ноутбук Apple полностью преобразился с появлением чипа Apple M1. Центральный процессор теперь работает до 3,5 раза быстрее. Графический — до 5 раз.</div>
+                        <div class="banner_2_button">
+                            
+                            <button type="submit" class="button_buy" value="Submit"><a href="product.html">Купить</a></button>
+                            
+                        </div>
+                    </div>
+                    <div class="banner_2_img">
+                        <img src="img/banner_2_product.png" alt="">
+                    </div>
+                </div> 
+
+                <div class="banner_2_container">
+                    <div class="banner_2_text">
+                        <div class="banner_2_categories">Laptops 3</div>
+                        <div class="banner_2_name"> MacBook Air 13</div>
+                        <div class="banner_2_dscr"> Самый тонкий и лёгкий ноутбук Apple полностью преобразился с появлением чипа Apple M1. Центральный процессор теперь работает до 3,5 раза быстрее. Графический — до 5 раз.</div>
+                        <div class="banner_2_button">
+                            
+                            <button type="submit" class="button_buy" value="Submit"><a href="product.html">Купить</a></button>
+                            
+                        </div>
+                    </div>
+                    <div class="banner_2_img">
+                        <img src="img/banner_2_product.png" alt="">
+                    </div>
+                </div> 
             
         </div>
     </div>
@@ -375,5 +409,8 @@
         <div class="copy">Copyright ©2021 All rights reserved</div>
     </div>
 </div>
+
+<!-- scripts -->
+<script src="script/all.js"></script>
 </body>
 </html>
