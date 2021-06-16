@@ -4,49 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/all.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link href="css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
     
     <title>Document</title>
-    <style>
-       
-    </style>
     
     <script src="script/jquery-3.6.0.js"></script>
-    <script type="text/javascript" src="script/slick.js"></script>
-    <script src="script/all.js"></script>
+    <script type="text/javascript" src="script/slick.js"></script>  
 </head>
 <body> 
 <div class="main_container">
-                                                <!--Header -->
+    <!--Header -->
     <header class="header">
+        <h2 class="sr-only">Магазин BrandShop</h2>
         <div class="top-bar">
-            <div class="top_bar__phone_item top-bar__box"> <a href="tel:+375293353328"><i class="fas fa-mobile-alt"></i> +375 29 335 33 28</a></div>
-            <div class="top_bar__email_item top-bar__box"><a href="mailto:dekan06@gmail.com"><i class="far fa-envelope"></i> dekan06@gmail.com</a></div>
-             <div class="top_bar__login_item top-bar__box">
-                 <a href="#"><i class="far fa-user"></i> Войти</a>
-                </div>
-  
+            <div class="top_bar__phone_item top-bar__box">
+                <a href="tel:+375293353328"><i class="fas fa-mobile-alt"></i> +375 29 335 33 28</a>
+            </div>
+            <div class="top_bar__email_item top-bar__box">
+                <a href="mailto:dekan06@gmail.com"><i class="far fa-envelope"></i> dekan06@gmail.com</a>
+            </div>
+            <div class="top_bar__login_item top-bar__box">
+                <a href="#"><i class="far fa-user"></i> Войти</a>
+            </div>
         </div>
 
         <div class="main-header">
             <div class="main-header__logo"><a href="index">BrandShop</a></div>
             <div class="search_form">
                 <form>
-                <input type="text" placeholder="Искать здесь...">
-                <button type="submit"><i class="fas fa-search"></i></button>
+                    <input type="text" placeholder="Искать здесь...">
+                    <button type="submit" aria-label="Искать">
+                        <span class="sr-only">Search</span>
+                        <i class="fas fa-search"></i>
+                    </button>
                 </form>
-              </div>
+            </div>
             <div class="main-header__cart">
-                <button type="submit" class="header_basket_button" value="Submit"><a href="#"><i class="fas fa-shopping-cart"></i>Корзина</a></button>
+                <a href="#" class="header_basket_button"><i class="fas fa-shopping-cart"></i>Корзина</a>
             </div>
         </div>
-        <div class="menu">
+        <!-- please use semantic tag <menu> -->
+        <div class="menu"> 
             <ul>
                 <li class="menu__first_item"><a href="#"> <i class="fas fa-bars"></i> Категории</a>
                     <ul>
@@ -65,12 +69,12 @@
             </ul>
         </div>
     </header>
-                                        <!--Banner -->
+    <!--Banner -->
     <div class="banner">
         <div class="banner_background"></div>
         <div class="banner_product"></div>
         <div class="banner_content">
-            <h1 class="banner_text">Премьера смартфонов</h1>
+            <h2 class="banner_text">Премьера смартфонов</h2>
             <div class="banner_price">
                 <span>
                     $530
@@ -116,26 +120,25 @@
         </div>
     </div>
     <div class="deals_featured">
-        <div class="deals_week">
-            <div class="deals_week__desc">Товар недели</div>
-            <div class="deals_week__img"><img src="img/deals.png" alt=""></div>
-            <div class="deals_week__text">
-                <div class="deals_week__text-left">Наушники</div>
-                
-                <div class="deals_week__text-right">300 BYN</div>   
+        <div class="featured_item_top">Популярные товары</div>
+        <div class="featured_item_grid">
+            <div class="deals_week">
+                <div class="deals_week__desc">Товар недели</div>
+                <div class="deals_week__img"><img src="img/deals.png" alt=""></div>
+                <div class="deals_week__text">
+                    <div class="deals_week__text-left">Наушники</div>
+                    <div class="deals_week__text-right">300 BYN</div>   
+                </div>
+                <div class="deals_week__text">
+                    <div class="deals_week__text-left font-24">Beoplay H7</div>
+                    <div class="deals_week__text-right font-24 font-red">225 BYN</div> 
+                    
+                </div>
+                <div>
+                    <button class="deals_week_button"><a href="product.html">Купить</a></button>
+                </div>
             </div>
-            <div class="deals_week__text">
-                <div class="deals_week__text-left font-24">Beoplay H7</div>
-                <div class="deals_week__text-right font-24 font-red">225 BYN</div> 
-                
-            </div>
-            <div>
-                <button class="deals_week_button"><a href="product.html">Купить</a></button>
-            </div>
-        </div>
-        <div class="deals-featured__container">
-            <div class="featured_item_top">Популярные товары</div>
-            <div class="featured_item">
+            <div class="featured_item featured_item_1">
                 <div><img src="img/featured_1.png" alt=""></div>
                 <div class="font-700"> 379 BYN</div>
                 <div>Huawei MediaPad 10</div>
@@ -143,7 +146,7 @@
                     <button class="featured_item_button"><a href="product.html">Купить</a></button>
                 </div>
             </div>
-            <div class="featured_item">
+            <div class="featured_item featured_item_2">
                 <div><img src="img/featured_2.png" alt=""></div>
                 <div class="font-700"> 349 BYN</div>
                 <div>Apple iPod shuffle</div>
@@ -151,7 +154,7 @@
                     <button class="featured_item_button"><a href="product.html">Купить</a></button>
                 </div>
             </div>
-            <div class="featured_item">
+            <div class="featured_item featured_item_3">
                 <div><img src="img/featured_3.png" alt=""></div>
                 <div class="font-700"> 299 BYN</div>
                 <div>Sony MDRZX310W</div>
@@ -159,7 +162,7 @@
                     <button class="featured_item_button"><a href="product.html">Купить</a></button>
                 </div>
             </div>
-            <div class="featured_item">
+            <div class="featured_item featured_item_4">
                 <div><img src="img/featured_4.png" alt=""></div>
                 <div class="font-700"> 319 BYN</div>
                 <div>Redmi Note 6</div>
@@ -167,7 +170,7 @@
                     <button class="featured_item_button"><a href="product.html">Купить</a></button>
                 </div>
             </div>
-            <div class="featured_item">
+            <div class="featured_item featured_item_5">
                 <div><img src="img/featured_5.png" alt=""></div>
                 <div class="font-700"> 519 BYN</div>
                 <div>Canon STM Kit</div>
@@ -175,7 +178,7 @@
                     <button class="featured_item_button"><a href="product.html">Купить</a></button>
                 </div>
             </div>
-            <div class="featured_item">
+            <div class="featured_item featured_item_6">
                 <div><img src="img/featured_6.png" alt=""></div>
                 <div class="font-700"> 399 BYN</div>
                 <div>Samsung J330F</div>
@@ -183,7 +186,7 @@
                     <button class="featured_item_button"><a href="product.html">Купить</a></button>
                 </div>
             </div>
-            <div class="featured_item">
+            <div class="featured_item featured_item_7">
                 <div><img src="img/featured_7.png" alt=""></div>
                 <div class="font-700"> 899 BYN</div>
                 <div>Lenovo Idea Pad</div>
@@ -191,7 +194,7 @@
                     <button class="featured_item_button"><a href="product.html">Купить</a></button>
                 </div>
             </div>
-            <div class="featured_item">
+            <div class="featured_item featured_item_8">
                 <div><img src="img/featured_8.png" alt=""></div>
                 <div class="font-700"> 69 BYN</div>
                 <div>Xiaomi Powerbank</div>
@@ -199,8 +202,8 @@
                     <button class="featured_item_button"><a href="product.html">Купить</a></button>
                 </div>
             </div>
-            
-        </div>
+       
+        </div>    
     </div>
     <div class="popular_categories">
         <div class="popular_categories_main"> Популярные категории</div>
@@ -230,9 +233,9 @@
             
                 <div class="banner_2_container">
                     <div class="banner_2_text">
-                        <div class="banner_2_categories">Laptops</div>
+                        <div class="banner_2_categories">Ноутбуки</div>
                         <div class="banner_2_name"> MacBook Air 13</div>
-                        <div class="banner_2_dscr"> Самый тонкий и лёгкий ноутбук Apple полностью преобразился с появлением чипа Apple M1. Центральный процессор теперь работает до 3,5 раза быстрее. Графический — до 5 раз.</div>
+                        <div class="banner_2_dscr"> Самый тонкий и лёгкий ноутбук Apple полностью преобразился с появлением чипа Apple M1. Центральный процессор теперь работает до 3,5 раза быстрее.</div>
                         <div class="banner_2_button">
                             
                             <button type="submit" class="button_buy" value="Submit"><a href="product.html">Купить</a></button>
@@ -243,8 +246,38 @@
                         <img src="img/banner_2_product.png" alt="">
                     </div>
                 </div> 
-                
-            
+
+                <div class="banner_2_container">
+                    <div class="banner_2_text">
+                        <div class="banner_2_categories">Смартфоны</div>
+                        <div class="banner_2_name"> iPhone 12</div>
+                        <div class="banner_2_dscr"> A14 Bionic, самый быстрый процессор iPhone. Дисплей OLED от края до края. Передняя панель Ceramic Shield, которая в четыре раза снижает риск повреждений дисплея при падении.</div>
+                        <div class="banner_2_button">
+                            
+                            <button type="submit" class="button_buy" value="Submit"><a href="product.html">Купить</a></button>
+                            
+                        </div>
+                    </div>
+                    <div class="banner_2_img">
+                        <img src="img/banner_3_product.png" alt="">
+                    </div>
+                </div> 
+
+                <div class="banner_2_container">
+                    <div class="banner_2_text">
+                        <div class="banner_2_categories">Аксессуары</div>
+                        <div class="banner_2_name"> Apple Watch Series 6</div>
+                        <div class="banner_2_dscr"> Измеряйте уровень кислорода в крови с помощью потрясающего датчика и специального приложения. Делайте ЭКГ, когда удобно и где угодно. </div>
+                        <div class="banner_2_button">
+                            
+                            <button type="submit" class="button_buy" value="Submit"><a href="product.html">Купить</a></button>
+                            
+                        </div>
+                    </div>
+                    <div class="banner_2_img">
+                        <img src="img/banner_4_product.png" alt="">
+                    </div>
+                </div> 
             
         </div>
     </div>
@@ -334,7 +367,9 @@
             <div class="footer_contact">
                     <div class="footer_logo"><a href="#">BrandShop</a></div>
                     <div class="footer_title">У Вас появились вопросы? Работаем 24/7</div>
-                    <div class="footer_phone">+ 375 29 335 33 28</div>
+                    <div class="footer_phone">
+                        <a href="tel:+375293353328"> +375 29 335 33 28</a>
+                    </div>
                     <div class="footer_contact_text">
                         улица Черничная 26, Минск
                     </div>
@@ -375,5 +410,8 @@
         <div class="copy">Copyright ©2021 All rights reserved</div>
     </div>
 </div>
+
+<!-- scripts -->
+<script src="script/all.js"></script>
 </body>
 </html>
